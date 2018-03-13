@@ -14,7 +14,7 @@ app.set('views', './app/views');
 
 // configurar middleware express.static
 //app.use(express.static('./app/public'));
-app.use(express.static(path.join(__dirname, './app/public')));
+app.use(express.static(path.join(__dirname, 'app/public')));
 
 // configurar middleware body-parser
 app.use(bodyParser.urlencoded({extended:true}));

@@ -7,10 +7,10 @@ var expressValidator = require('express-validator');
 
 express()
   .use(express.static(path.join(__dirname, './app/public')))
-  .set('views', path.join(__dirname, './app/views'))
+  .set('views', path.join(__dirname, '../app/views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('index'))
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+  //.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 // iniciar o objeto do express
 var app = express();

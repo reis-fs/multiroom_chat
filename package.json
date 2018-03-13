@@ -1,6 +1,9 @@
 {
   "name": "multiroom_chat",
   "version": "1.0.0",
+  "engines": {
+    "node":"8.10.0"
+  },
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -23,6 +26,11 @@
   "bugs": {
     "url": "https://github.com/reis-fs/multiroom_chat/issues"
   },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
   "homepage": "https://github.com/reis-fs/multiroom_chat#readme",
   "description": ""
 }

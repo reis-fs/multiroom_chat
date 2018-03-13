@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var expressValidator = require('express-validator');
 
 express()
-  .use(express.static(path.join(__dirname, './app/public')))
+  .use(express.static(path.join(__dirname, '../app/public')))
   .set('views', path.join(__dirname, '../app/views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('index'))

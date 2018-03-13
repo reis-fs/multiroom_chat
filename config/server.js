@@ -4,12 +4,15 @@ var path = require('path');
 var consign = require('consign');
 var bodyParser = require('body-parser');
 var expressValidator = require('express-validator');
+var PORT = process.env.PORT || 5000;
 
 express()
   .use(express.static(path.join(__dirname, '../app/public')))
   .set('views', path.join(__dirname, '../app/views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('index'))
+  .use(bodyParser.urlencoded({extended:true}))
+  .use(expressValidator());
   //.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 // iniciar o objeto do express
@@ -23,10 +26,10 @@ var app = express();
 //app.use(express.static('./app/public'));
 
 // configurar middleware body-parser
-app.use(bodyParser.urlencoded({extended:true}));
+//app.use(bodyParser.urlencoded({extended:true}));
 
 // configurar middleware express-validator
-app.use(expressValidator());
+//app.use(expressValidator());
 
 // efetuar autoload das rotas, dos models e dos controllers para o objeto app
 consign()
@@ -36,4 +39,4 @@ consign()
   .into(app);
 
 // exportar o objeto app
-module.exports =  app;
+module.exports = app;

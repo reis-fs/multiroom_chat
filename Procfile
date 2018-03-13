@@ -1,1 +1,1 @@
-web: node app.js
+web: ./nodebb setup && ./nodebb start

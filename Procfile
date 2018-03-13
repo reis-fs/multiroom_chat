@@ -1,1 +1,1 @@
-web: ./nodebb setup && ./nodebb start
+web: node start

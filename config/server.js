@@ -28,7 +28,5 @@ consign()
   .then('app/controllers')
   .into(app);
 
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
-
 // exportar o objeto app
 module.exports = app;

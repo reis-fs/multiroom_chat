@@ -1,7 +1,0 @@
-{
-    "name": "iDot Adoção de Animais",
-    "description": "Aplicação PWA para adoção de animais",
-    "repository": "https://github.com/reis-fs/multiroom_chat",
-    "keywords": ["node", "express", "heroku"],
-    "image": "heroku/nodejs"
-  }

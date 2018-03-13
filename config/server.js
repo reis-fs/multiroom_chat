@@ -13,7 +13,7 @@ express()
   //.get('/', (req, res) => res.render('index'))
   .use(bodyParser.urlencoded({extended:true}))
   .use(expressValidator());
-  //.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 // iniciar o objeto do express
 var app = express();

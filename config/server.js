@@ -4,7 +4,6 @@ var path = require('path');
 var consign = require('consign');
 var bodyParser = require('body-parser');
 var expressValidator = require('express-validator');
-var PORT = process.env.PORT || 5000;
 
 // iniciar o objeto do express
 var app = express();

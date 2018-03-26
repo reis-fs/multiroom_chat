@@ -1,6 +1,5 @@
 // importar modulos
 var express = require('express');
-var path = require('path');
 var consign = require('consign');
 var bodyParser = require('body-parser');
 var expressValidator = require('express-validator');
@@ -14,7 +13,6 @@ app.set('views', './app/views');
 
 // configurar middleware express.static
 app.use(express.static('./app/public'));
-//app.use(express.static(path.join(__dirname, 'public')));
 
 // configurar middleware body-parser
 app.use(bodyParser.urlencoded({extended:true}));

@@ -19,7 +19,7 @@
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "express-validator": "^5.0.3",
-    "path": "^0.12.7"
+    "socket.io": "^2.0.4"
   },
   "devDependencies": {},
   "repository": {
@@ -31,8 +31,8 @@
   },
   "keywords": [
     "node",
-    "heroku",
-    "express"
+    "express",
+    "socket.io"
   ],
   "homepage": "https://github.com/reis-fs/multiroom_chat#readme",
   "description": ""
